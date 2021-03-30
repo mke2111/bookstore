@@ -40,7 +40,8 @@
   margin-right: 8px;
 }
 
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
   border: 2px solid rgba(112, 76, 182, 0.4);
 }
 
@@ -49,12 +50,12 @@
 }
 
 .asyncButton {
-  composes: button;
+  /* composes: button; */
   position: relative;
   margin-left: 8px;
 }
 
-.asyncButton:after {
+.asyncButton::after {
   content: "";
   background-color: rgba(112, 76, 182, 0.15);
   display: block;
@@ -67,8 +68,8 @@
   transition: width 1s linear, opacity 0.5s ease 1s;
 }
 
-.asyncButton:active:after {
+.asyncButton:active::after {
   width: 0%;
   opacity: 1;
-  transition: 0s
+  transition: 0s;
 }
