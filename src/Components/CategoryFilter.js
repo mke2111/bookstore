@@ -6,11 +6,11 @@ const CategoryFilter = ({ handleFilter }) => {
 
   return (
     <>
-      <label htmlFor="filterSelect">
+      <label htmlFor="filterSel">
         Category Filter
-        <select id="filterSelect" onChange={handleFilter}>
+        <select id="filterSel" onChange={handleFilter}>
           {categories.map((cat) => (
-            <option key={cat} valur={cat}>{cat}</option>
+            <option key={cat} value={cat}>{cat}</option>
           ))}
         </select>
       </label>
