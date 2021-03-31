@@ -1,4 +1,3 @@
-/* eslint-disable arrow-parens */
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -10,7 +9,7 @@ const BooksForm = ({ bookCreator }) => {
     category: '',
   });
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     if (e.target.id === 'titleInput') {
       setBookInfo({ ...bookInfo, title: e.target.value });
     } else {
@@ -39,12 +38,12 @@ const BooksForm = ({ bookCreator }) => {
         <label htmlFor="cate">
           Category
           <select id="cate" onChange={handleChange} value={bookInfo.category}>
-            {categories.map(cat => (
+            {categories.map((cat) => (
               <option key={cat} value={cat}>{cat}</option>
             ))}
           </select>
         </label>
-        <button type="submit" onClick={handleSubmit}>Add Book</button>
+        <button type="button" onClick={handleSubmit}>Add Book</button>
       </form>
     </>
   );
@@ -54,8 +53,8 @@ BooksForm.propTypes = {
   bookCreator: PropTypes.func.isRequired,
 };
 
-const mapDispatchToProps = dispatch => ({
-  bookCreator: book => { dispatch(createBook(book)); },
+const mapDispatchToProps = (dispatch) => ({
+  bookCreator: (book) => { dispatch(createBook(book)); },
 });
 
 export default connect(null, mapDispatchToProps)(BooksForm);
