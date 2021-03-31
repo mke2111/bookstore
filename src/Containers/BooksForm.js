@@ -1,30 +1,59 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable arrow-parens */
 import React from 'react';
+import { connect } from 'react-redux';
 
-const BooksForm = () => {
+const BookForm = ({ bookCreator }) => {
+  const [bookInfo, setBookInfo] = setState({
+    title: '',
+    category: '',
+  });
+
+  const handleChange = e => {
+    if (e.target.id === 'titleInput') {
+      setBookInfo({ ...bookInfo, title: : e.target.value});
+    } else {
+      setBookInfo({ ...bookInfo, category: e.targer.value });
+    }
+  };
+
+  const handleSubmit = () => {
+    if ( bookInfo.title !== '' && bookInfo.category !== '') {
+      bookCreator(bookInfo);
+      setBookInfo({ title: '', category: ''});
+    } else {
+      setBookInfo({ ...bookInfo});
+    }
+  };
+
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
   return (
     <>
       <form>
-        <label>
-          Book title
-          <input type="text" />
+        <label htmlFor="title">
+          Book Title
+          <input type="text" id="title" onChange={handleChange} calue={bookInfo.title} />
         </label>
-        <label>
-          Select the Category
-          <select>
-            {categories.map((cat) => (
-              <option key={cat} value={cat}>
-                {cat}
-              </option>
+        <label htmlFor="cate">
+          Category
+          <select id="cate" onchange={handleChange} value={bookInfo.category}>
+            {categories.map(cat => (
+              <option key={cat} value={cat}>{cat}</option>
             ))}
           </select>
         </label>
-        <button type="submit">Add the book</button>
+        <button type="submit" onClick={handleSubmit}>Add Book</button>
       </form>
     </>
   );
 };
 
-export default BooksForm;
+BooksForm.propTypes = {
+  bookCreator: PropTypes.func.isRequired,
+};
+
+const mapDispatchToProps = dispatch => ({
+  bookCreator: book => { dispatch(creatorBook(book));},
+});
+
+export default connect(null, mapDispatchToProps)(BooksForm);
