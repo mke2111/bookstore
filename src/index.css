@@ -11,6 +11,12 @@ code {
     monospace;
 }
 
+button {
+  border: none;
+  background-color: white;
+  line-height: 16.8px;
+}
+
 .bgd {
   background-color: white;
   width: 1400px;
@@ -46,4 +52,14 @@ code {
 
 .book-margin {
   margin: 38px 100px 15px 100px;
+  background-color: white;
+  padding: 10px 20px;
+}
+
+.bnh {
+  background-color: #fafafa;
+}
+
+.f-14 {
+  font-size: 14px;
 }

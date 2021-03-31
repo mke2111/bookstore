@@ -5,7 +5,7 @@ import '../index.css';
 import '../css-circular-prog-bar.css';
 
 const Book = ({ book, delete: handleRemoveBook }) => (
-  <div className="d-flex flex-row justify-content-around book-margin">
+  <div className="d-flex flex-row justify-content-between book-margin">
     {/* <tr>
       <td>
         {book.id}
@@ -22,29 +22,28 @@ const Book = ({ book, delete: handleRemoveBook }) => (
     </tr> */}
     <div>
       <div>
-        <h4>{ book.category }</h4>
+        <h4 className="f-14">{ book.category }</h4>
         <h2>
           {book.title}
         </h2>
         <h4>Author</h4>
       </div>
-      <div className="d-flex flex-row">
-        <h3>Comments</h3>
+      <div className="d-flex flex-row justify-content-between">
+        <h3 className="f-14 pt-3">Comments</h3>
         <h3>
-          <button type="button" onClick={() => handleRemoveBook(book)}>Remove</button>
+          <button className="f-14" type="button" onClick={() => handleRemoveBook(book)}>Remove</button>
         </h3>
-        <h3>Edit</h3>
+        <h3 className="f-14">Edit</h3>
       </div>
     </div>
     <div className="d-flex align-items-center">
       <div className="progress-circle p10">
-        <span>10%</span>
         <div className="left-half-clipper">
           <div className="first50-bar" />
           <div className="value-bar" />
         </div>
       </div>
-      <h3>64%</h3>
+      <h3>10%</h3>
     </div>
     <div>
       <h3>Current Chapter</h3>
