@@ -56,7 +56,7 @@ BooksList.propTypes = {
   ).isRequired,
   delete: PropTypes.func.isRequired,
   filter: PropTypes.string.isRequired,
-  changeCat: PropTypes.string.isRequired,
+  changeCat: PropTypes.func.isRequired,
 };
 
 const mapStateProps = (state) => ({ books: state.books, filter: state.filter });

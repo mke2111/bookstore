@@ -34,7 +34,7 @@ const BooksForm = ({ bookCreator }) => {
       <form>
         <label htmlFor="title">
           Book Title
-          <input type="text" id="title" onChange={handleChange} calue={bookInfo.title} />
+          <input type="text" id="title" onChange={handleChange} value={bookInfo.title} />
         </label>
         <label htmlFor="cate">
           Category
