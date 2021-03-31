@@ -1,27 +1,29 @@
 /* eslint-disable arrow-parens */
-import React from 'react';
+import React, { useState } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { createBook } from '../Actions';
 
-const BookForm = ({ bookCreator }) => {
-  const [bookInfo, setBookInfo] = setState({
+const BooksForm = ({ bookCreator }) => {
+  const [bookInfo, setBookInfo] = useState({
     title: '',
     category: '',
   });
 
   const handleChange = e => {
     if (e.target.id === 'titleInput') {
-      setBookInfo({ ...bookInfo, title: : e.target.value});
+      setBookInfo({ ...bookInfo, title: e.target.value });
     } else {
       setBookInfo({ ...bookInfo, category: e.targer.value });
     }
   };
 
   const handleSubmit = () => {
-    if ( bookInfo.title !== '' && bookInfo.category !== '') {
+    if (bookInfo.title !== '' && bookInfo.category !== '') {
       bookCreator(bookInfo);
-      setBookInfo({ title: '', category: ''});
+      setBookInfo({ title: '', category: '' });
     } else {
-      setBookInfo({ ...bookInfo});
+      setBookInfo({ ...bookInfo });
     }
   };
 
@@ -36,7 +38,7 @@ const BookForm = ({ bookCreator }) => {
         </label>
         <label htmlFor="cate">
           Category
-          <select id="cate" onchange={handleChange} value={bookInfo.category}>
+          <select id="cate" onChange={handleChange} value={bookInfo.category}>
             {categories.map(cat => (
               <option key={cat} value={cat}>{cat}</option>
             ))}
@@ -53,7 +55,7 @@ BooksForm.propTypes = {
 };
 
 const mapDispatchToProps = dispatch => ({
-  bookCreator: book => { dispatch(creatorBook(book));},
+  bookCreator: book => { dispatch(createBook(book));},
 });
 
 export default connect(null, mapDispatchToProps)(BooksForm);
