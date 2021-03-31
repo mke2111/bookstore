@@ -26,18 +26,18 @@ const BooksForm = ({ bookCreator }) => {
     }
   };
 
-  const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+  const categories = ['', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
   return (
     <>
       <form>
-        <label htmlFor="title">
+        <label htmlFor="titleInput">
           Book Title
-          <input type="text" id="title" onChange={handleChange} value={bookInfo.title} />
+          <input type="text" id="titleInput" onChange={handleChange} value={bookInfo.title} />
         </label>
-        <label htmlFor="cate">
+        <label htmlFor="catSelect">
           Category
-          <select id="cate" onChange={handleChange} value={bookInfo.category}>
+          <select id="catSelect" onChange={handleChange} value={bookInfo.category}>
             {categories.map((cat) => (
               <option key={cat} value={cat}>{cat}</option>
             ))}
