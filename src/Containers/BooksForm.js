@@ -1,30 +1,60 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-import React from 'react';
+import React, { useState } from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { createBook } from '../Actions';
 
-const BooksForm = () => {
-  const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+const BooksForm = ({ bookCreator }) => {
+  const [bookInfo, setBookInfo] = useState({
+    title: '',
+    category: '',
+  });
+
+  const handleChange = (e) => {
+    if (e.target.id === 'titleInput') {
+      setBookInfo({ ...bookInfo, title: e.target.value });
+    } else {
+      setBookInfo({ ...bookInfo, category: e.target.value });
+    }
+  };
+
+  const handleSubmit = () => {
+    if (bookInfo.title !== '' && bookInfo.category !== '') {
+      bookCreator(bookInfo);
+      setBookInfo({ title: '', category: '' });
+    } else {
+      setBookInfo({ ...bookInfo });
+    }
+  };
+
+  const categories = ['', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
   return (
     <>
       <form>
-        <label>
-          Book title
-          <input type="text" />
+        <label htmlFor="titleInput">
+          Book Title
+          <input type="text" id="titleInput" onChange={handleChange} value={bookInfo.title} />
         </label>
-        <label>
-          Select the Category
-          <select>
+        <label htmlFor="cateSelect">
+          Category
+          <select id="cateSelect" onChange={handleChange} value={bookInfo.category}>
             {categories.map((cat) => (
-              <option key={cat} value={cat}>
-                {cat}
-              </option>
+              <option key={cat} value={cat}>{cat}</option>
             ))}
           </select>
         </label>
-        <button type="submit">Add the book</button>
+        <button type="button" onClick={handleSubmit}>Add Book</button>
       </form>
     </>
   );
 };
 
-export default BooksForm;
+BooksForm.propTypes = {
+  bookCreator: PropTypes.func.isRequired,
+};
+
+const mapDispatchToProps = (dispatch) => ({
+  bookCreator: (book) => { dispatch(createBook(book)); },
+});
+
+export default connect(null, mapDispatchToProps)(BooksForm);
