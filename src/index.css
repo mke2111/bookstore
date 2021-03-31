@@ -43,3 +43,7 @@ code {
 .text-size {
   font-size: 12px;
 }
+
+.book-margin {
+  margin: 38px 100px 15px 100px;
+}
