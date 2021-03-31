@@ -14,7 +14,7 @@ const BooksForm = ({ bookCreator }) => {
     if (e.target.id === 'titleInput') {
       setBookInfo({ ...bookInfo, title: e.target.value });
     } else {
-      setBookInfo({ ...bookInfo, category: e.targer.value });
+      setBookInfo({ ...bookInfo, category: e.target.value });
     }
   };
 
@@ -55,7 +55,7 @@ BooksForm.propTypes = {
 };
 
 const mapDispatchToProps = dispatch => ({
-  bookCreator: book => { dispatch(createBook(book));},
+  bookCreator: book => { dispatch(createBook(book)); },
 });
 
 export default connect(null, mapDispatchToProps)(BooksForm);
