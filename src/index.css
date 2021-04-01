@@ -33,7 +33,7 @@ button {
 
 .inner {
   margin: 0 100px 15px 100px;
-  border-top: 1px solid gray;
+  border-top: 1px solid #e8e8e8;
   padding: 15px 0 215px 0;
 }
 
@@ -44,7 +44,7 @@ button {
 }
 
 .header-all {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #e8e8e8;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -54,7 +54,6 @@ button {
 }
 
 .header {
-  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -63,9 +62,30 @@ button {
   padding-left: 5px;
 }
 
+.bold {
+  font-family: "Montserrat-Bold", sans-serif;
+}
+
+.regular {
+  font-family: "Montserrat-Regular", sans-serif;
+}
+
+.roboslab {
+  font-family: RobotoSlab;
+  font-weight: 300;
+}
+
+.light {
+  color: #e8e8e8;
+}
+
 .color-blue {
-  color: blue;
+  color: #0290ff;
   font-size: 22px;
+}
+
+.color-comment {
+  color: #4386bf;
 }
 
 .text-size {
@@ -87,8 +107,16 @@ button {
   background-color: #fafafa;
 }
 
+.try {
+  padding-top: 0.8px;
+}
+
 .f-14 {
   font-size: 14px;
+}
+
+.f-32 {
+  font-size: 32px;
 }
 
 .f-22 {
@@ -108,7 +136,7 @@ button {
 }
 
 .blue-btn {
-  background-color: blue;
+  background-color: #0290ff;
   color: white;
   width: 184px;
   height: 33px;
@@ -122,7 +150,7 @@ button {
 }
 
 .bd-right {
-  border-right: 1px solid gray;
+  border-right: 1px solid #e8e8e8;
 }
 
 .book-input {

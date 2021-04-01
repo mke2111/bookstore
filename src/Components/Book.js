@@ -22,18 +22,18 @@ const Book = ({ book, delete: handleRemoveBook }) => (
     </tr> */}
     <div>
       <div className="info">
-        <h4 className="f-14">{ book.category }</h4>
+        <h4 className="light f-14 bold font-weight-bold">{ book.category }</h4>
         <h2 className="f-22 font-weight-bold">
           {book.title}
         </h2>
-        <h4 className="f-14 pb-21">Author</h4>
+        <h4 className="f-14 pb-21 roboslab">Author</h4>
       </div>
-      <div className="d-flex flex-row justify-content-between">
-        <p className="f-14 pointer bd-right pr-2">Comments</p>
+      <div className="d-flex flex-row justify-content-between roboslab color-comment">
+        <p className="f-14 pointer bd-right pr-3 try ">Comments</p>
         <p>
-          <button className="f-14 bd-right" type="button" onClick={() => handleRemoveBook(book)}>Remove</button>
+          <button className="f-14 bd-right px-2 color-comment" type="button" onClick={() => handleRemoveBook(book)}>Remove</button>
         </p>
-        <p className="f-14 pointer pl-2">Edit</p>
+        <p className="f-14 pointer pl-3 try">Edit</p>
       </div>
     </div>
     <div className="d-flex align-items-center">
@@ -43,12 +43,15 @@ const Book = ({ book, delete: handleRemoveBook }) => (
           <div className="value-bar" />
         </div>
       </div>
-      <h3>10%</h3>
+      <span className="d-flex flex-column">
+        <h3 className="f-32 regular">10%</h3>
+        <h6 className="f-13 regular">Completed</h6>
+      </span>
     </div>
     <div>
-      <h3 className="f-13 ">Current Chapter</h3>
-      <h3 className="f-16">Chapter 16</h3>
-      <button className="f-13 blue-btn" type="button">Update progress</button>
+      <h3 className="f-13 roboslab">CURRENT CHAPTER</h3>
+      <h3 className="f-16 roboslab">Chapter 16</h3>
+      <button className="f-13 blue-btn roboslab" type="button">Update progress</button>
     </div>
   </div>
 );

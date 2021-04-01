@@ -54,7 +54,7 @@
   width: 5em;
   height: 5em;
   border-radius: 50%;
-  border: 0.45em solid blue; /*The border is 0.35 but making it larger removes visual artifacts */
+  border: 0.45em solid #0290ff; /*The border is 0.35 but making it larger removes visual artifacts */
   /* background-color: #4d642d; for debug */
   box-sizing: border-box;
 }
