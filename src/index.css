@@ -21,6 +21,12 @@ button {
   background-color: white;
 }
 
+.form {
+  padding: 10px 100px 15px 100px;
+  border-top: 1px solid gray;
+  background-color: #fafafa;
+}
+
 .bgd {
   background-color: white;
   width: 1400px;
