@@ -30,7 +30,7 @@ const BooksForm = ({ bookCreator }) => {
 
   return (
     <>
-      <div className="form">
+      <div className="form shadow-lg">
         <h3>Add New Book</h3>
         <form>
           <label htmlFor="titleInput">

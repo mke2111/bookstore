@@ -24,7 +24,7 @@ const BooksList = ({
 
   return (
     <>
-      <div className="book-shelf">
+      <div className="book-shelf shadow-lg">
         {/* <CategoryFilter handleFilter={changeCategory} /> */}
         {/* <table>
           <thead>

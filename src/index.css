@@ -8,7 +8,7 @@ body {
   background-color: #f5f6fa;
   width: 1600px;
   height: 1434px;
-  border: 2px solid green;
+  border: 2px solid transparent;
 }
 
 code {
@@ -23,14 +23,12 @@ button {
 
 .form {
   padding: 10px 100px 15px 100px;
-  border-top: 1px solid gray;
   background-color: #fafafa;
 }
 
 .bgd {
   background-color: white;
   width: 1400px;
-  border: 2px solid red;
   margin: 149px 100px 188px 100px;
 }
 
@@ -75,6 +73,7 @@ button {
 .book-shelf {
   padding: 20px 0;
   background-color: #fafafa;
+  border-bottom: 1px solid gray;
 }
 
 .f-14 {
