@@ -16,6 +16,12 @@ code {
     monospace;
 }
 
+select {
+  background-color: transparent;
+  border: 1px solid #efedeb;
+  border-radius: 3px;
+}
+
 button {
   border: none;
   background-color: white;
@@ -28,7 +34,7 @@ button {
 .inner {
   margin: 0 100px 15px 100px;
   border-top: 1px solid gray;
-  padding-top: 15px;
+  padding: 15px 0 215px 0;
 }
 
 .bgd {
@@ -117,4 +123,21 @@ button {
 
 .bd-right {
   border-right: 1px solid gray;
+}
+
+.book-input {
+  width: 664px;
+  height: 45px;
+}
+
+.cat-input {
+  width: 265px;
+  height: 45px;
+  margin-left: 34px;
+}
+
+.add-book {
+  width: 184px;
+  height: 45px;
+  margin-left: 34px;
 }

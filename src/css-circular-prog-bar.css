@@ -30,7 +30,7 @@
   width: 5em;
   text-align: center;
   display: block;
-  color: #53777a;
+  color: blue;
   z-index: 2;
 }
 .left-half-clipper {
@@ -54,8 +54,8 @@
   width: 5em;
   height: 5em;
   border-radius: 50%;
-  border: 0.45em solid #53777a; /*The border is 0.35 but making it larger removes visual artifacts */
-  /*background-color: #4D642D;*/ /* for debug */
+  border: 0.45em solid blue; /*The border is 0.35 but making it larger removes visual artifacts */
+  /* background-color: #4d642d; for debug */
   box-sizing: border-box;
 }
 /* Progress bar filling the whole right half for values above 50% */
