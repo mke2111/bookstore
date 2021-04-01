@@ -10,9 +10,9 @@ const initialState = [
   { id: Math.floor(Math.random() * 100) + 1, title: 'Book1', category: 'Horror' },
   { id: Math.floor(Math.random() * 100) + 1, title: 'Book2', category: 'Action' },
   { id: Math.floor(Math.random() * 100) + 1, title: 'Book3', category: 'Biography' },
-  { id: Math.floor(Math.random() * 100) + 1, title: 'Book4', category: 'History' },
-  { id: Math.floor(Math.random() * 100) + 1, title: 'Book5', category: 'Kids' },
-  { id: Math.floor(Math.random() * 100) + 1, title: 'Book6', category: 'Learning' },
+  // { id: Math.floor(Math.random() * 100) + 1, title: 'Book4', category: 'History' },
+  // { id: Math.floor(Math.random() * 100) + 1, title: 'Book5', category: 'Kids' },
+  // { id: Math.floor(Math.random() * 100) + 1, title: 'Book6', category: 'Learning' },
   { id: Math.floor(Math.random() * 100) + 1, title: 'Book7', category: 'Sci-Fi' },
 ];
 

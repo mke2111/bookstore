@@ -21,7 +21,7 @@ const Book = ({ book, delete: handleRemoveBook }) => (
       </td>
     </tr> */}
     <div>
-      <div>
+      <div className="info">
         <h4 className="f-14">{ book.category }</h4>
         <h2 className="f-22">
           {book.title}
