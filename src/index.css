@@ -35,6 +35,7 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 0 100px;
+  height: 85px;
 }
 
 .header {
@@ -42,12 +43,13 @@ button {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 592px;
+  width: 487px;
   padding-left: 5px;
 }
 
 .color-blue {
   color: blue;
+  font-size: 22px;
 }
 
 .text-size {
@@ -65,7 +67,6 @@ button {
 }
 
 .book-shelf {
-  /* background-color: red; */
   padding: 20px 0;
   background-color: #fafafa;
 }
@@ -98,4 +99,12 @@ button {
   padding: 7.5px 0;
   border-radius: 5px;
   margin-top: 23px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.bd-right {
+  border-right: 1px solid gray;
 }

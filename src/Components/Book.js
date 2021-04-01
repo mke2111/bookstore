@@ -29,11 +29,11 @@ const Book = ({ book, delete: handleRemoveBook }) => (
         <h4 className="f-14 pb-21">Author</h4>
       </div>
       <div className="d-flex flex-row justify-content-between">
-        <p className="f-14">Comments</p>
+        <p className="f-14 pointer bd-right pr-2">Comments</p>
         <p>
-          <button className="f-14" type="button" onClick={() => handleRemoveBook(book)}>Remove</button>
+          <button className="f-14 bd-right" type="button" onClick={() => handleRemoveBook(book)}>Remove</button>
         </p>
-        <p className="f-14">Edit</p>
+        <p className="f-14 pointer pl-2">Edit</p>
       </div>
     </div>
     <div className="d-flex align-items-center">
