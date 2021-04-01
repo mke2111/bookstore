@@ -1,7 +1,5 @@
 body {
   margin: 0;
-  /* background-color: red; */
-  /* background-color: #f5f6fa; */
 }
 
 #root {
@@ -9,11 +7,6 @@ body {
   width: 1600px;
   height: 1434px;
   border: 2px solid transparent;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
 
 select {
@@ -71,7 +64,7 @@ button {
 }
 
 .roboslab {
-  font-family: RobotoSlab;
+  font-family: "RobotoSlab", sans-serif;
   font-weight: 300;
 }
 
@@ -97,7 +90,7 @@ button {
 }
 
 .book-margin {
-  margin: 0px 100px 15px 100px;
+  margin: 0 100px 15px 100px;
   background-color: white;
   padding: 20px 20px;
 }

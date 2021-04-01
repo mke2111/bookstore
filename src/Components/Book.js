@@ -6,20 +6,6 @@ import '../css-circular-prog-bar.css';
 
 const Book = ({ book, delete: handleRemoveBook }) => (
   <div className="d-flex flex-row justify-content-between book-margin">
-    {/* <tr>
-      <td>
-        {book.id}
-      </td>
-      <td>
-        {book.title}
-      </td>
-      <td>
-        {book.category}
-      </td>
-      <td>
-        <button type="button" onClick={() => handleRemoveBook(book)}>Remove Book</button>
-      </td>
-    </tr> */}
     <div>
       <div className="info">
         <h4 className="light f-14 bold font-weight-bold">{ book.category }</h4>

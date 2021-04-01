@@ -5,16 +5,11 @@ import { connect } from 'react-redux';
 
 import Book from '../Components/Book';
 import { removeBook, changeFilter } from '../Actions/index';
-// import CategoryFilter from '../Components/CategoryFilter';
 import '../index.css';
 
 const BooksList = ({
   books, filter, delete: handleRemoveBook,
 }) => {
-  // const changeCategory = (e) => {
-  //   changeCat(e.target.value);
-  // };
-
   const filteredBooks = () => {
     if (filter === 'All') {
       return books.sort((a, b) => a.id - b.id);
@@ -25,25 +20,7 @@ const BooksList = ({
   return (
     <>
       <div className="book-shelf shadow-lg">
-        {/* <CategoryFilter handleFilter={changeCategory} /> */}
-        {/* <table>
-          <thead>
-            <tr>
-              <th>
-                Book ID
-              </th>
-              <th>
-                Title
-              </th>
-              <th>
-                Category
-              </th>
-            </tr>
-          </thead>
-          <tbody> */}
         {filteredBooks().map((book) => <Book key={book.id} book={book} delete={handleRemoveBook} />)}
-        {/* </tbody>
-        </table> */}
       </div>
     </>
   );
@@ -59,7 +36,6 @@ BooksList.propTypes = {
   ).isRequired,
   delete: PropTypes.func.isRequired,
   filter: PropTypes.string.isRequired,
-  // changeCat: PropTypes.func.isRequired,
 };
 
 const mapStateProps = (state) => ({ books: state.books, filter: state.filter });
