@@ -29,11 +29,11 @@ const Book = ({ book, delete: handleRemoveBook }) => (
         <h4 className="f-14 pb-21">Author</h4>
       </div>
       <div className="d-flex flex-row justify-content-between">
-        <h3 className="f-14">Comments</h3>
-        <h3>
+        <p className="f-14">Comments</p>
+        <p>
           <button className="f-14" type="button" onClick={() => handleRemoveBook(book)}>Remove</button>
-        </h3>
-        <h3 className="f-14">Edit</h3>
+        </p>
+        <p className="f-14">Edit</p>
       </div>
     </div>
     <div className="d-flex align-items-center">
