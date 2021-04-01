@@ -23,13 +23,13 @@ const Book = ({ book, delete: handleRemoveBook }) => (
     <div>
       <div>
         <h4 className="f-14">{ book.category }</h4>
-        <h2>
+        <h2 className="f-22">
           {book.title}
         </h2>
-        <h4>Author</h4>
+        <h4 className="f-14 pb-21">Author</h4>
       </div>
-      <div className="d-flex flex-row justify-content-between">
-        <h3 className="f-14 pt-3">Comments</h3>
+      <div className="d-flex flex-row justify-content-between pt-3">
+        <h3 className="f-14">Comments</h3>
         <h3>
           <button className="f-14" type="button" onClick={() => handleRemoveBook(book)}>Remove</button>
         </h3>
@@ -46,9 +46,9 @@ const Book = ({ book, delete: handleRemoveBook }) => (
       <h3>10%</h3>
     </div>
     <div>
-      <h3>Current Chapter</h3>
-      <h3>Chapter 16</h3>
-      <button type="button">Update progress</button>
+      <h3 className="f-13 ">Current Chapter</h3>
+      <h3 className="f-16">Chapter 16</h3>
+      <button className="f-13 blue-btn" type="button">Update progress</button>
     </div>
   </div>
 );

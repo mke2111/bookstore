@@ -5,15 +5,15 @@ import { connect } from 'react-redux';
 
 import Book from '../Components/Book';
 import { removeBook, changeFilter } from '../Actions/index';
-import CategoryFilter from '../Components/CategoryFilter';
+// import CategoryFilter from '../Components/CategoryFilter';
 import '../index.css';
 
 const BooksList = ({
-  books, filter, changeCat, delete: handleRemoveBook,
+  books, filter, delete: handleRemoveBook,
 }) => {
-  const changeCategory = (e) => {
-    changeCat(e.target.value);
-  };
+  // const changeCategory = (e) => {
+  //   changeCat(e.target.value);
+  // };
 
   const filteredBooks = () => {
     if (filter === 'All') {
@@ -24,8 +24,8 @@ const BooksList = ({
 
   return (
     <>
-      <div className="bnh">
-        <CategoryFilter handleFilter={changeCategory} />
+      <div className="book-shelf">
+        {/* <CategoryFilter handleFilter={changeCategory} /> */}
         {/* <table>
           <thead>
             <tr>
@@ -59,7 +59,7 @@ BooksList.propTypes = {
   ).isRequired,
   delete: PropTypes.func.isRequired,
   filter: PropTypes.string.isRequired,
-  changeCat: PropTypes.func.isRequired,
+  // changeCat: PropTypes.func.isRequired,
 };
 
 const mapStateProps = (state) => ({ books: state.books, filter: state.filter });

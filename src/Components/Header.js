@@ -12,7 +12,7 @@ const Header = () => (
         <h3 className="text-size">CATEGORIES</h3>
       </div>
       <div>
-        <i className="fas fa-user" />
+        <i className="fas fa-user color-blue" />
       </div>
     </div>
   </>
