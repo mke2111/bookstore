@@ -30,21 +30,23 @@ const BooksForm = ({ bookCreator }) => {
 
   return (
     <>
-      <div className="form shadow-lg">
-        <h3>Add New Book</h3>
-        <form>
-          <label htmlFor="titleInput">
-            <input type="text" id="titleInput" placeholder="Book Title" onChange={handleChange} value={bookInfo.title} />
-          </label>
-          <label htmlFor="cateSelect">
-            <select id="cateSelect" onChange={handleChange} value={bookInfo.category}>
-              {categories.map((cat) => (
-                <option placeholder="Category" key={cat} value={cat}>{cat}</option>
-              ))}
-            </select>
-          </label>
-          <button className="blue-btn" type="button" onClick={handleSubmit}>Add Book</button>
-        </form>
+      <div className="form">
+        <div className="inner">
+          <h3>Add New Book</h3>
+          <form>
+            <label htmlFor="titleInput">
+              <input type="text" id="titleInput" placeholder="Book Title" onChange={handleChange} value={bookInfo.title} />
+            </label>
+            <label htmlFor="cateSelect">
+              <select id="cateSelect" onChange={handleChange} value={bookInfo.category}>
+                {categories.map((cat) => (
+                  <option placeholder="Category" key={cat} value={cat}>{cat}</option>
+                ))}
+              </select>
+            </label>
+            <button className="blue-btn" type="button" onClick={handleSubmit}>Add Book</button>
+          </form>
+        </div>
       </div>
     </>
   );

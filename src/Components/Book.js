@@ -23,7 +23,7 @@ const Book = ({ book, delete: handleRemoveBook }) => (
     <div>
       <div className="info">
         <h4 className="f-14">{ book.category }</h4>
-        <h2 className="f-22">
+        <h2 className="f-22 font-weight-bold">
           {book.title}
         </h2>
         <h4 className="f-14 pb-21">Author</h4>

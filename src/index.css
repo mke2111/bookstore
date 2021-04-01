@@ -22,8 +22,13 @@ button {
 }
 
 .form {
-  padding: 10px 100px 15px 100px;
   background-color: #fafafa;
+}
+
+.inner {
+  margin: 0 100px 15px 100px;
+  border-top: 1px solid gray;
+  padding-top: 15px;
 }
 
 .bgd {
@@ -43,6 +48,7 @@ button {
 }
 
 .header {
+  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -67,13 +73,12 @@ button {
 .book-margin {
   margin: 0px 100px 15px 100px;
   background-color: white;
-  padding: 10px 20px;
+  padding: 20px 20px;
 }
 
 .book-shelf {
   padding: 20px 0;
   background-color: #fafafa;
-  border-bottom: 1px solid gray;
 }
 
 .f-14 {
@@ -93,7 +98,7 @@ button {
 }
 
 .pb-21 {
-  padding-bottom: 19px;
+  padding-bottom: 12px;
 }
 
 .blue-btn {
