@@ -1,11 +1,10 @@
 body {
   margin: 0;
+  background-color: #f5f6fa;
 }
 
 #root {
   background-color: #f5f6fa;
-  width: 1600px;
-  height: 1434px;
   border: 2px solid transparent;
 }
 
@@ -32,7 +31,6 @@ button {
 
 .bgd {
   background-color: white;
-  width: 1400px;
   margin: 149px 100px 188px 100px;
 }
 
@@ -147,18 +145,18 @@ button {
 }
 
 .book-input {
-  width: 664px;
+  width: 500px;
   height: 45px;
 }
 
 .cat-input {
-  width: 265px;
+  width: 200px;
   height: 45px;
-  margin-left: 34px;
+  margin-left: 25px;
 }
 
 .add-book {
-  width: 184px;
+  width: 154px;
   height: 45px;
-  margin-left: 34px;
+  margin-left: 25px;
 }
