@@ -1,27 +1,162 @@
 body {
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f6fa;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+#root {
+  background-color: #f5f6fa;
+  border: 2px solid transparent;
+}
+
+select {
+  background-color: transparent;
+  border: 1px solid #efedeb;
+  border-radius: 3px;
+}
+
+button {
+  border: none;
+  background-color: white;
+}
+
+.form {
+  background-color: #fafafa;
+}
+
+.inner {
+  margin: 0 100px 15px 100px;
+  border-top: 1px solid #e8e8e8;
+  padding: 15px 0 215px 0;
+}
+
+.bgd {
+  background-color: white;
+  margin: 149px 100px 188px 100px;
+}
+
+.header-all {
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  height: 85px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 487px;
+  padding-left: 5px;
+}
+
+.bold {
+  font-family: "Montserrat-Bold", sans-serif;
+}
+
+.regular {
+  font-family: "Montserrat-Regular", sans-serif;
+}
+
+.roboslab {
+  font-family: "RobotoSlab", sans-serif;
+  font-weight: 300;
+}
+
+.light {
+  color: #bdbdbd;
+}
+
+.color-blue {
+  color: #0290ff;
+  font-size: 22px;
+}
+
+.color-comment {
+  color: #4386bf;
+}
+
+.text-size {
+  font-size: 12px;
+}
+
+.info {
+  line-height: 0.7;
+}
+
+.book-margin {
+  margin: 0 100px 15px 100px;
+  background-color: white;
+  padding: 20px 20px;
+}
+
+.book-shelf {
+  padding: 20px 0;
+  background-color: #fafafa;
+}
+
+.try {
+  padding-top: 0.8px;
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+.f-32 {
+  font-size: 32px;
+}
+
+.f-22 {
+  font-size: 22px;
+}
+
+.f-13 {
+  font-size: 13px;
+}
+
+.f-16 {
+  font-size: 16px;
+}
+
+.pb-21 {
+  padding-bottom: 12px;
+}
+
+.blue-btn {
+  background-color: #0290ff;
+  color: white;
+  width: 184px;
+  height: 33px;
+  padding: 7.5px 0;
+  border-radius: 5px;
+  margin-top: 23px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.bd-right {
+  border-right: 1px solid #e8e8e8;
+}
+
+.book-input {
+  width: 500px;
+  height: 45px;
+}
+
+.cat-input {
+  width: 200px;
+  height: 45px;
+  margin-left: 25px;
+}
+
+.add-book {
+  width: 154px;
+  height: 45px;
+  margin-left: 25px;
 }

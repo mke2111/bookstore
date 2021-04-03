@@ -5,11 +5,12 @@
 This project is part of the React chapter in the Microverse Program.
 In this project we develop the knowledge to use React and Redux together.
 
+![screenshot](./Screenshot.png)
 
 ## Built With
 
 - JavaScript
-- React 
+- React
 - Redux
 
 ### Linters Used
@@ -17,10 +18,9 @@ In this project we develop the knowledge to use React and Redux together.
 - Eslint
 - Stylelint
 
-## Live Demo - Try the game here
+## Live Demo
 
 [Live Demo Link](https://react--bookstore.herokuapp.com/)
-
 
 ## Getting Started
 
@@ -59,7 +59,7 @@ You will also see any lint errors in the console.
 Before running `yarn test` be sure to run `npm i` to install all dependencies required for tests.
 
 After running `yarn test` you must select one of the options given by Jest.
-***For example type `a` to run all tests.***
+**_For example type `a` to run all tests._**
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
@@ -86,14 +86,13 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Authors
 
-👤  **Roy Mukuye**
+👤 **Roy Mukuye**
 
 - GitHub: [@mke2111](https://github.com/mke2111)
 - Twitter: [@Roymkenya](https://twitter.com/Roymkenya)
 - LinkedIn: [Roy Mukuye](https://www.linkedin.com/in/roy-mukuye-42b07b1b4)
 
-
-👤  **Alejandro Toledo**
+👤 **Alejandro Toledo**
 
 - GitHub: [@alejandrotoledoweb](https://github.com/alejandrotoledoweb)
 - Twitter: [@alejot](https://twitter.com/alejot)
