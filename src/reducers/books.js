@@ -14,7 +14,7 @@ export default (state = [], action) => {
         ...state, {
           id: randInt(1, 1000),
           title: action.book.title,
-          category: action.book.category
+          category: action.book.category,
         },
       ];
     case REMOVE_BOOK:
